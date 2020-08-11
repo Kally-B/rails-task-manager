@@ -1,0 +1,30 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  font-family: "open", sans-serif;
+  color: #387BB4;
+}
+
+a {
+  text-decoration: none;
+  color: #387BB4;
+}
+
+button {
+  background-color: #387BB4;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+button > a {
+  color: white;
+}
+
+.details {
+  width: 500px;
+  border: 1px solid;
+  border-color: grey;
+  border-radius: 4px;
+  padding: 10px 20px;
+}

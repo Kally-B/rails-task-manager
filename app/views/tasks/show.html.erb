@@ -1,0 +1,12 @@
+<h1><%= @task.title %></h1>
+<button><%= link_to "✏️ Edit this task", edit_task_path %></button>
+
+<p class="details"><%= @task.details %></p>
+
+<% if @task.completed %>
+  <p><%= check_box(@task.title, @task.title, {checked: true}) %>This task is completed</p>
+  <% else %>
+  <p><%= check_box(@task.title, @task.title) %>This task is not completed yet</p>
+<% end %>
+
+<button><%= link_to "⬅️ Back to list", tasks_path %></button>
